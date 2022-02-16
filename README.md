@@ -1,10 +1,13 @@
 # licence-key-impl
 
+We try to build up a PoC system which include demo app and key gen app for license key verification.
+
 ### Intro
 We took jwt token algorithm as the reference
 ![jwt_ng1_en](https://i.imgur.com/XSesjJh.png)
 
 In our case, we use simpler way, here is the step
+
 `[Key Generation Part]`
 1. Generate random string (in our case, we use the middle of uuid4 random string)
 ```
