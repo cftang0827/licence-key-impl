@@ -9,6 +9,7 @@ We took jwt token algorithm as the reference
 In our case, we use simpler way, here is the step
 
 `[Key Generation Part]`
+
 1. Generate random string (in our case, we use the middle of uuid4 random string)
 ```
 ae66f1f5-ec93-4f42-a757-b8f5b939ae7e => ec93
@@ -20,6 +21,7 @@ e.g. `AAAABBBBCCCC` => `AAAA-BBBB-CCCC`
 => `AAAA-BBBB-CCCC-EC93`
 
 `[Key Verification]`
+
 For example, input license key is `AAAA-BBBB-CCCC-EC93`
 1. We get last sub string `EC93`, put it lower `ec93`, it's our random string
 2. Use the same algorithm to generate license key, then we will get `AAAA-BBBB-CCCC-EC93`
